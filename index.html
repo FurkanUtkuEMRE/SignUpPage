@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+
+    <title>Sign Up to Anima!</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="hero-container">
+            <div class="logo">
+                <img class="logo-image" src="./images/logo.png" alt="Anima Logo">
+                <h1 class="logo-heading">Anima</h1>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="info-text padding-left">
+                <p>This is where your dreams come true! Anima is a free cloud platform where you can use the
+                    power of internet to compute, render and publish your creations.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p>Tomorrow begins <em> right now</em>.</p>
+            </div>
+
+            <form action="#">
+                <div class="form padding-left">
+                    <p class="form-title">Let's do this!</p>
+                    <div class="form-input">
+                        <label for="first-name">First Name</label>
+                        <input class="form-input-box" type="text" name="first-name" id="first-name" required>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="last-name">Last Name</label>
+                        <input class="form-input-box" type="text" name="last-name" id="last-name">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="email">E-Mail</label>
+                        <input class="form-input-box" type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="phone-number">Phone number</label>
+                        <input class="form-input-box" type="text" name="phone-number" id="phone-number" minlength="9"
+                            maxlength="9">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="password">Password</label>
+                        <input class="form-input-box" type="password" name="password" id="password" required>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="confirm-password">Confirm password</label>
+                        <input class="form-input-box" type="password" name="confirm-password" id="confirm-password"
+                            onkeyup='checkPassword();' required>
+                        <p class="confirm-message"></p>
+                    </div>
+                </div>
+                <div class="padding-left"><button class="submit-button" type="submit">Create Account</button></div>
+            </form>
+
+            <div class="log-in padding-left">
+                <p class="log-in-text">Already have an account?</p>
+                <a class="log-in-link" href="#">LOG IN</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
