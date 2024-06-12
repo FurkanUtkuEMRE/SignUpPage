@@ -1,4 +1,4 @@
-# sign-up-page
+# Sign Up Page
 
 Sign up page which includes a form to get user information. Form checks if the data entered is correct.
 
